@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pintu Kumar | Developer Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+transition:0.4s;
+}
+
+.dark{
+background:#111;
+color:#eee;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+background:#0a66c2;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+nav button{
+padding:6px 12px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(120deg,#0a66c2,#4facfe);
+color:white;
+}
+
+.hero img{
+width:150px;
+border-radius:50%;
+border:4px solid white;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero span{
+color:yellow;
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 10%;
+}
+
+h2{
+margin-bottom:20px;
+color:#0a66c2;
+}
+
+/* SKILLS */
+
+.skill{
+margin:12px 0;
+}
+
+.bar{
+background:#ddd;
+height:10px;
+border-radius:20px;
+}
+
+.progress{
+background:#0a66c2;
+height:10px;
+border-radius:20px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.dark .card{
+background:#222;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+.card a{
+display:inline-block;
+margin-top:8px;
+color:#0a66c2;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* CERTIFICATES */
+
+.certificates li{
+margin:8px 0;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:6px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+background:#0a66c2;
+color:white;
+padding:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:28px;
+}
+
+nav{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+<nav>
+<div><b>Pintu Kumar</b></div>
+
+<div>
+<a href="#about">About</a>
+<a href="#Technical Skills">Technical Skills</a>
+<a href="#softskills">Soft Skills</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+<button onclick="toggleMode()">🌙</button>
+</div>
+
+</nav>
+
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="profile.jpg">
+
+<h1>Pintu Kumar</h1>
+
+<h3>I am <span id="typing"></span></h3>
+
+</div>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+B.Tech Computer Science student passionate about Web Development,
+Machine Learning and Problem Solving. I enjoy building projects
+that solve real world problems.
+</p>
+
+</section>
+
+<section id="Technical Skills">
+
+<h2>Skills</h2>
+
+<div class="Technical Skills">
+<p>HTML</p>
+<div class="bar"><div class="progress" style="width:98%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>CSS</p>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>Python</p>
+<div class="bar"><div class="progress" style="width:99%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>Data Structures</p>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>Machine Learning</p>
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>Flask</p>
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>Pandas</p>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="Technical Skills">
+<p>NumPy</p>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+</section>
+
+<!-- SOFT SKILLS -->
+
+<section id="softskills">
+
+<h2>Soft Skills</h2>
+
+<ul>
+
+<li>Team Leadership</li>
+<li>Team Management</li>
+<li>Problem Solving</li>
+<li>Communication Skills</li>
+<li>Project Planning</li>
+<li>Critical Thinking</li>
+<li>Decision Making</li>
+<li>Collaboration</li>
+<li>Time Management</li>
+
+</ul>
+
+</section>
+
+<!-- HOBBIES -->
+
+<section id="hobbies">
+
+<h2>Hobbies</h2>
+
+<ul>
+
+<li>Playing Cricket</li>
+<li>Playing Volleyball</li>
+<li>Gym & Fitness</li>
+<li>Solving Mathematical Problems</li>
+<li>Learning New Technologies</li>
+
+</ul>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<img src="project1.jpg">
+<h3>Smart Library Management System</h3>
+<p>Manage library facilities efficiently.</p>
+</div>
+
+<div class="card">
+<img src="project2.jpg">
+<h3>Gold Price Prediction</h3>
+<p>Machine learning model for gold price prediction.</p>
+</div>
+
+<div class="card">
+<img src="project3.jpg">
+<h3>Heart Disease Prediction</h3>
+<p>ML model predicting heart disease risk.</p>
+</div>
+
+<div class="card">
+<img src="project4.jpg">
+<h3>Super Market Sales Dashboard</h3>
+<p>Data analytics dashboard for supermarket sales.</p>
+</div>
+
+<div class="card">
+<img src="project5.jpg">
+<h3>Smart Street Light (IoT)</h3>
+<p>Automatic street lighting system using IoT.</p>
+</div>
+
+<div class="card">
+<img src="project6.jpg">
+<h3>Smart Home Energy Optimization</h3>
+<p>IoT system to optimize home energy usage.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2>Certificates</h2>
+
+<ul class="certificates">
+
+<li>AI-ML Virtual Internship Certificate</li>
+<li>Python Full Stack Development with Project - Virtual Internship Certificate</li>
+<li>IBM Artificial Intelligence Certificate</li>
+<li>AI Skills Passport Certificate</li>
+<li>LLM for Young Developer - Foundational Course</li>
+<li>Emerging LinkedIn Creator at Invertis University</li>
+
+</ul>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email:
+<a href="mailto:pintukumar22372016@gmail.com">pintukumar22372016@gmail.com</a>
+</p>
+
+<p>GitHub:
+<a href="https://github.com/pintukumar22372016-alt">github.com/pintukumar22372016-alt</a>
+</p>
+
+<p>LinkedIn:
+<a href="https://www.linkedin.com/in/pintu-kumar-606bba379">linkedin.com/in/pintu-kumar</a>
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Pintu Kumar | Developer Portfolio</p>
+
+</footer>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark")
+}
+
+const words = ["Web Developer","ML Enthusiast","Python Programmer","AI Enthusiast","IoT Enthusiast"]
+
+let i=0
+let j=0
+let current=""
+let isDeleting=false
+
+function type(){
+
+current = words[i]
+
+if(!isDeleting){
+document.getElementById("typing").textContent=current.substring(0,j++)
+}else{
+document.getElementById("typing").textContent=current.substring(0,j--)
+}
+
+if(j==current.length){
+isDeleting=true
+}
+
+if(isDeleting && j==0){
+isDeleting=false
+i++
+if(i==words.length){
+i=0
+}
+}
+
+setTimeout(type,120)
+
+}
+
+type()
+
+</script>
+
+</body>
+</html>
